@@ -190,13 +190,7 @@
 				"computerName": "[parameters('hostName')]",
 				"adminUsername": "[parameters('adminUsername')]",
 				"linuxConfiguration": {
-					"disablePasswordAuthentication": true,
-					"ssh": {
-						"publicKeys": [{
-							"path": "[parameters('sshKeyPath')]",
-							"keyData": "[parameters('sshPublicKey')]"
-						}]
-					}
+					"disablePasswordAuthentication": true
 				}
 			},
 			"storageProfile": "[variables(variables('storageProfile'))]",
