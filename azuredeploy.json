@@ -375,10 +375,7 @@
 		"infraLbHttpProbeId": "[concat(variables('infraLbId'),'/probes/httpProbe')]",
 		"infraLbHttpsProbeId": "[concat(variables('infraLbId'),'/probes/httpsProbe')]",
 		"imageReference": {
-			"publisher": "RedHat",
-			"offer": "RHEL",
-			"sku": "7-RAW",
-			"version": "latest"
+			"id": "[resourceId('Microsoft.Compute/images', 'rhel_7_3_image')]"
 		},
 		"redHatTags": {
 			"app": "OpenShiftContainerPlatform",
